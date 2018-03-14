@@ -31,7 +31,6 @@
           </a>
         </div>
       </div>
-    </div>
 
     <div class="container">
       <!-- Example row of columns -->
@@ -64,29 +63,20 @@
           </div>
         </div>
       </div>
-
-      <div class="row search-results"
+      <div class="card-group"
         infiniteScroll
         [infiniteScrollDistance]="1"
         [infiniteScrollThrottle]="10"
         (scrolled)="onScroll()">
-        <ul class="list-group">
-            <li class="list-group-item" *ngFor="let item of fishes">
-                <div class="card-group">
-                <div class="card">
-                    <li class="list-group-item" *ngFor="let arr1 of item.images">
-                    <div class="card-body col-md-6 thumbnail">
-                      <figure>
-                          <img class="card-img-top" width="100%" height="60%" class="d-inline-block align-top" alt="" src="{{arr1.thumbnail}}" alt="Card image cap">
-                          <figcaption class="figure-caption text-left">{{item.name}}</figcaption>
-                          <p class="h6"><i>{{item.description}}</i></p>
-                      </figure>
-                    </div>
-                    </li>
-                  </div>
-                </div>
-            </li>
-        </ul>
+          <div class="card" *ngFor="let item of fishes">
+              <div class="card-body" *ngFor="let arr1 of item.images">
+                <figure>
+                    <img class="card-img-top" width="100%" height="60%" alt="" src="{{arr1.thumbnail}}" alt="Card image cap">
+                    <figcaption class="figure-caption text-left">{{item.name}}</figcaption>
+                    <p class="h6"><i>{{item.description}}</i></p>
+                </figure>
+              </div>
+          </div>
       </div>
       <!-- <div class="row search-results"
         infiniteScroll
