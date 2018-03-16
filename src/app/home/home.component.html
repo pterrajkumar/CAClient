@@ -65,16 +65,30 @@
       </div> -->
       <div class="card-group"
         infiniteScroll
-        [infiniteScrollDistance]="10"
+        [infiniteScrollDistance]="1"
         [infiniteScrollThrottle]="50"
         (scrolled)="onScroll()">
           <div class="card" *ngFor="let item of fishes">
-              <div class="card-body" *ngFor="let arr1 of item.images">
-                <figure>
+              <div class="card-body tag" *ngFor="let arr1 of item.images">
                     <img class="card-img-top" width="100%" height="60%" alt="" src="{{arr1.thumbnail}}" alt="Card image cap">
-                    <figcaption class="figure-caption text-left">{{item.name}}</figcaption>
-                    <p class="h6"><i>{{item.description}}</i></p>
-                </figure>
+                    <article class="card animated fadeInLeft">
+                    <div class="card-block">
+                      <h4 class="card-title">{{item.name}}</h4>
+                      <div *ngIf="item.available == 'true'; else nostock">
+                        In-Stock
+                      </div>
+                      <ng-template #nostock>No-Stock</ng-template>                     
+                      
+                      <h6 class="card-text">Rate: Rs {{item.rate}}/-</h6>
+                      <p class="card-text">{{item.description}}</p>
+                      <div *ngIf="item.available == 'true'; else disabled">
+                          <button type="button"class="btn btn-danger">ADD TO CART</button>
+                        </div>
+                      <ng-template #disabled>
+                          <button type="button" class="btn btn-danger" disabled>ADD TO CART</button>
+                      </ng-template>                      
+                    </div>
+                  </article>
               </div>
           </div>
       </div>
@@ -98,7 +112,12 @@
                 </figure>
             </li>
         </ul>
-      </div> -->
+      </div> --> 
+
+
+
+
+
 
       <hr>
     </div> <!-- /container -->
