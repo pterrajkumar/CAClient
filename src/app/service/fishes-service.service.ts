@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 
-//const BASE_URL = 'http://rajkumarpeter.southcentralus.cloudapp.azure.com:8080';
-const BASE_URL = 'http://localhost:3000';
+const BASE_URL = 'http://rajkumarpeter.southcentralus.cloudapp.azure.com:8080';
+//const BASE_URL = 'http://localhost:3000';
 
 @Injectable()
 export class FishesService {
