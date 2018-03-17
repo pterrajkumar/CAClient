@@ -4,21 +4,30 @@
         <!--<h1 class="display-3">Home Page Works</h1>
         <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <!-- <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
           </ol>
-          <div class="carousel-inner">
+          <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="../assets/images/close-up-of-fish-swimming-in-aquarium.jpg" alt="First slide">
+                <div class="view">
+                  <img class="d-block w-100" src="../assets/images/close-up-of-fish-swimming-in-aquarium.jpg" alt="First slide">
+                  <div class="mask rgba-black-light"></div>
+                </div>
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="../assets/images/gold-fish-in-water-tank.jpg" alt="Second slide">
+                <div class="view">
+                  <img class="d-block w-100" src="../assets/images/gold-fish-in-water-tank.jpg" alt="Second slide">
+                  <div class="mask rgba-black-light"></div>
+                </div>
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="../assets/images/Trichogaster_trichopterus-DefenderRegina.jpg" alt="Third slide">
+                <div class="view">
+                  <img class="d-block w-100" src="../assets/images/Trichogaster_trichopterus-DefenderRegina.jpg" alt="Third slide">
+                  <div class="mask rgba-black-light"></div>
+                </div>
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -29,12 +38,157 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
+        </div> -->
+
+        <!--Carousel Wrapper-->
+<div id="multi-item-example" class="carousel slide carousel-multi-item card-header" data-ride="carousel">
+    <!--Controls-->
+    <div class="controls-top  text-center" aria-label="Card buttons">
+        <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+        <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+    </div>
+    <!--/.Controls-->
+
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+        <li data-target="#multi-item-example" data-slide-to="1"></li>
+        <li data-target="#multi-item-example" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+        <!--First slide-->
+        <div class="carousel-item active">
+
+            <div class="col-md-4">
+                <div class="card mb-2">
+                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a class="btn btn-primary  text-center">Button</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a class="btn btn-primary">Button</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a class="btn btn-primary">Button</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
+        <!--/.First slide-->
+
+        <!--Second slide-->
+        <div class="carousel-item">
+
+            <div class="col-md-4">
+                <div class="card mb-2">
+                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a class="btn btn-primary">Button</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a class="btn btn-primary">Button</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a class="btn btn-primary">Button</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--/.Second slide-->
+
+        <!--Third slide-->
+        <div class="carousel-item">
+
+            <div class="col-md-4">
+                <div class="card mb-2">
+                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a class="btn btn-primary">Button</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a class="btn btn-primary">Button</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a class="btn btn-primary">Button</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--/.Third slide-->
+
+    </div>
+    <!--/.Slides-->
+
+</div>
+<!--/.Carousel Wrapper-->
+
+
       </div>
 
     <div class="container">
       <!-- Example row of columns -->
-      <div class="card-group">
+      <!-- <div class="card-group">
         <div class="card">
           <div class="card-body">
             <figure>
@@ -62,19 +216,58 @@
           </figure>
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="card-group"
         infiniteScroll
         [infiniteScrollDistance]="1"
-        [infiniteScrollThrottle]="10"
+        [infiniteScrollThrottle]="50"
         (scrolled)="onScroll()">
           <div class="card" *ngFor="let item of fishes">
-              <div class="card-body" *ngFor="let arr1 of item.images">
-                <figure>
+              <div class="card-body tag" *ngFor="let arr1 of item.images">
                     <img class="card-img-top" width="100%" height="60%" alt="" src="{{arr1.thumbnail}}" alt="Card image cap">
-                    <figcaption class="figure-caption text-left">{{item.name}}</figcaption>
-                    <p class="h6"><i>{{item.description}}</i></p>
-                </figure>
+                    <article class="card animated fadeInLeft">
+                    <div class="card-block">
+                      <h4 class="card-title">{{item.name}}</h4>
+                      <div *ngIf="item.available == 'true'; else nostock">
+                        In-Stock
+                      </div>
+                      <ng-template #nostock>No-Stock</ng-template>                     
+                      
+                      <h6 class="card-text">Rate: <strong>Rs {{item.rate}}/-</strong></h6>
+                      <p class="card-text">{{item.description}}</p>
+                      <div class="row">
+                        <div class="col-xs-6" *ngIf="item.available == 'true'; else disabled">
+                            <button class="btn btn-danger btn-sm"><i class="fa fa-shopping-cart"></i></button>                         
+                        </div>
+                        <ng-template #disabled>
+                          <div class= "col-xs-6">
+                            <button class="btn btn-danger btn-sm" disabled><i class="fa fa-shopping-cart"></i></button>
+                          </div>
+                        </ng-template>
+                        <div class="col-xs-6">
+                            <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#fullHeightModalRight"><i class="fa fa-search"></i></button>
+                        </div>
+                        <div class="row">
+                            <!-- <span class="float-left font-weight-bold">
+                                <strong>59$</strong>
+                              </span> -->
+                              <div class="col-xs-6">
+                              <span class="float-right">
+                                <a data-toggle="tooltip" data-placement="top" title="Add to Cart">
+                                  <i class="fa fa-shopping-cart grey-text ml-3"></i>
+                                </a>
+                                <a data-toggle="tooltip" data-placement="top" title="Share">
+                                  <i class="fa fa-share-alt grey-text ml-3"></i>
+                                </a>
+                                <a class="active" data-toggle="tooltip" data-placement="top" title="Added to Wishlist">
+                                    <i class="fa fa-heart ml-3"></i>
+                                </a>
+                              </span>
+                            </div>
+                        </div>
+                      </div>              
+                    </div>
+                  </article>
               </div>
           </div>
       </div>
@@ -98,7 +291,30 @@
                 </figure>
             </li>
         </ul>
-      </div> -->
+      </div> --> 
+
+      <div class="modal fade right" id="fullHeightModalRight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-full-height" role="document">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body">
+                          ...
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                  </div>
+          </div>
+      </div>
+
+
+
 
       <hr>
     </div> <!-- /container -->
