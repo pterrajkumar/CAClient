@@ -1,8 +1,9 @@
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA  } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { AppComponent } from './app.component';
 import { routing } from './app.routing';
@@ -37,8 +38,9 @@ import { FishesService } from './service/fishes-service.service';
     RegisterComponent
   ],
   imports: [
-    BrowserModule, HttpModule, InfiniteScrollModule, FormsModule, routing, LazyLoadImagesModule
+    BrowserModule, HttpModule, InfiniteScrollModule, FormsModule, routing, LazyLoadImagesModule, MDBBootstrapModule.forRoot()
   ],
+  schemas: [ NO_ERRORS_SCHEMA ],
   providers: [FishesService],
   bootstrap: [AppComponent]
 })

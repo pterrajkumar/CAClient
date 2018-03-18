@@ -1,68 +1,31 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <!--<h1 class="display-3">Home Page Works</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
-        <!-- <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-                <div class="view">
-                  <img class="d-block w-100" src="../assets/images/close-up-of-fish-swimming-in-aquarium.jpg" alt="First slide">
-                  <div class="mask rgba-black-light"></div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="view">
-                  <img class="d-block w-100" src="../assets/images/gold-fish-in-water-tank.jpg" alt="Second slide">
-                  <div class="mask rgba-black-light"></div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="view">
-                  <img class="d-block w-100" src="../assets/images/Trichogaster_trichopterus-DefenderRegina.jpg" alt="Third slide">
-                  <div class="mask rgba-black-light"></div>
-                </div>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div> -->
-
+        
         <!--Carousel Wrapper-->
-<div id="multi-item-example" class="carousel slide carousel-multi-item card-header" data-ride="carousel">
-    <!--Controls-->
-    <div class="controls-top  text-center" aria-label="Card buttons">
-        <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-        <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
-    </div>
-    <!--/.Controls-->
-
-    <!--Indicators-->
-    <ol class="carousel-indicators">
-        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-        <li data-target="#multi-item-example" data-slide-to="1"></li>
-        <li data-target="#multi-item-example" data-slide-to="2"></li>
-    </ol>
-    <!--/.Indicators-->
+        <mdb-carousel [isControls]="true" class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'" [animation]="'slide'">
+        <!--Controls-->
+        <!-- <div class="controls-top  text-center" aria-label="Card buttons">
+            <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+            <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+        </div> -->
+        <!--/.Controls-->
+        <!--Indicators-->
+        <!-- <ol class="carousel-indicators">
+            <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+            <li data-target="#multi-item-example" data-slide-to="1"></li>
+            <li data-target="#multi-item-example" data-slide-to="2"></li>
+        </ol> -->
+        <!--/.Indicators-->
 
     <!--Slides-->
-    <div class="carousel-inner" role="listbox">
+    <!-- <div class="carousel-inner" role="listbox"> -->
 
         <!--First slide-->
-        <div class="carousel-item active">
+        <!-- <div class="carousel-item active"> -->
 
+          <!--First slide-->
+          <mdb-slide>
             <div class="col-md-4">
                 <div class="card mb-2">
                     <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg" alt="Card image cap">
@@ -95,12 +58,15 @@
                     </div>
                 </div>
             </div>
-
-        </div>
+          </mdb-slide>
+          <!--/First slide-->
+        <!-- </div> -->
         <!--/.First slide-->
 
         <!--Second slide-->
-        <div class="carousel-item">
+        <!-- <div class="carousel-item"> -->
+          <!--Second slide-->
+          <mdb-slide>
 
             <div class="col-md-4">
                 <div class="card mb-2">
@@ -135,11 +101,14 @@
                 </div>
             </div>
 
-        </div>
+        <!-- </div> -->
         <!--/.Second slide-->
-
+      </mdb-slide>
+      <!--/Second slide-->
+      <!--Third slide-->
+      <mdb-slide>
         <!--Third slide-->
-        <div class="carousel-item">
+        <!-- <div class="carousel-item"> -->
 
             <div class="col-md-4">
                 <div class="card mb-2">
@@ -174,124 +143,77 @@
                 </div>
             </div>
 
-        </div>
+        <!-- </div> -->
         <!--/.Third slide-->
-
-    </div>
+      </mdb-slide>
+      <!--/Third slide-->
+    <!-- </div> -->
     <!--/.Slides-->
 
-</div>
-<!--/.Carousel Wrapper-->
+  </mdb-carousel>
+  <!--/.Carousel Wrapper-->
 
-
-      </div>
-
-    <div class="container">
-      <!-- Example row of columns -->
-      <!-- <div class="card-group">
-        <div class="card">
-          <div class="card-body">
-            <figure>
-                <img class="card-img-top" width="100%" height="60%" class="d-inline-block align-top" alt="" src="https://rajkumarpeterstorage2.blob.core.windows.net/rpeterimages/ImagesFish_4.jpg" alt="Card image cap">
-                <figcaption class="figure-caption text-left">Guppy</figcaption>
-                <p class="h6"><i>They are colorful peaceful fish that are easy to care for.</i></p>
-            </figure>
+      <!-- <div class="fixed-sn">
+          <div class="col-lg-10 ml-auto mr-auto">
+              <mdb-carousel [interval]="myInterval" [noWrap]="noWrapSlides" [(activeSlide)]="activeSlideIndex" (activeSlideChange)="activeSlideChange()">
+                <mdb-slide *ngFor="let slide of slides; let index=index">
+                  <img [src]="slide.image">
+                  <div class="carousel-caption">
+                    <h4>Slide {{index}}</h4>
+                    <p>{{slide.text}}</p>
+                  </div>
+                </mdb-slide>
+              </mdb-carousel>
           </div>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <figure>
-                <img class="card-img-top" width="100%" height="60%" class="d-inline-block align-top" alt="" src="https://rajkumarpeterstorage2.blob.core.windows.net/rpeterimages/ImagesFish_2.jpg" alt="Card image cap">
-                <figcaption class="figure-caption text-left">Gold Fish</figcaption>
-                <p class="h6"><i>They are colorful peaceful fish that are easy to care for.</i></p>
-          </figure>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <figure>
-                <img class="card-img-top" width="100%" height="60%" class="d-inline-block align-top" alt="" src="https://rajkumarpeterstorage2.blob.core.windows.net/rpeterimages/ImagesFish_3.jpg" alt="Card image cap">
-                <figcaption class="figure-caption text-left">Arowanas</figcaption>
-                <p class="h6"><i>They are colorful peaceful fish that are easy to care for.</i></p>
-          </figure>
-          </div>
-        </div>
       </div> -->
+        
       <div class="card-group"
         infiniteScroll
-        [infiniteScrollDistance]="1"
+        [infiniteScrollDistance]="10"
         [infiniteScrollThrottle]="50"
         (scrolled)="onScroll()">
-          <div class="card" *ngFor="let item of fishes">
-              <div class="card-body tag" *ngFor="let arr1 of item.images">
-                    <img class="card-img-top" width="100%" height="60%" alt="" src="{{arr1.thumbnail}}" alt="Card image cap">
-                    <article class="card animated fadeInLeft">
-                    <div class="card-block">
+        <div class="col-md-4 clearfix d-none d-md-block" *ngFor="let item of fishes">
+          <div class="card mb-2" *ngFor="let arr1 of item.images">
+                  <!--Card image-->
+                  <div class="view overlay hm-white-slight">
+                      <img class="card-img-top" width="100%" height="60%" alt="" src="{{arr1.thumbnail}}" alt="Card image cap">
+                      <a>
+                          <div class="mask waves-effect waves-light" mdbRippleRadius></div>
+                      </a>
+                  </div>
+              
+                  <div class="card-body">
+                    <!--Rating-->
+                    <ul class="rating">
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                    </ul> 
                       <h4 class="card-title">{{item.name}}</h4>
-                      <div *ngIf="item.available == 'true'; else nostock">
-                        In-Stock
-                      </div>
-                      <ng-template #nostock>No-Stock</ng-template>                     
-                      
-                      <h6 class="card-text">Rate: <strong>Rs {{item.rate}}/-</strong></h6>
+                      <!--Description-->
                       <p class="card-text">{{item.description}}</p>
-                      <div class="row">
-                        <div class="col-xs-6" *ngIf="item.available == 'true'; else disabled">
-                            <button class="btn btn-danger btn-sm"><i class="fa fa-shopping-cart"></i></button>                         
+                      <div *ngIf="item.available == 'true'; else nostock">
+                          In-Stock
                         </div>
-                        <ng-template #disabled>
-                          <div class= "col-xs-6">
-                            <button class="btn btn-danger btn-sm" disabled><i class="fa fa-shopping-cart"></i></button>
-                          </div>
+                        <ng-template #nostock>
+                          No-Stock
                         </ng-template>
-                        <div class="col-xs-6">
-                            <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#fullHeightModalRight"><i class="fa fa-search"></i></button>
-                        </div>
-                        <div class="row">
-                            <!-- <span class="float-left font-weight-bold">
-                                <strong>59$</strong>
-                              </span> -->
-                              <div class="col-xs-6">
-                              <span class="float-right">
-                                <a data-toggle="tooltip" data-placement="top" title="Add to Cart">
-                                  <i class="fa fa-shopping-cart grey-text ml-3"></i>
-                                </a>
-                                <a data-toggle="tooltip" data-placement="top" title="Share">
-                                  <i class="fa fa-share-alt grey-text ml-3"></i>
-                                </a>
-                                <a class="active" data-toggle="tooltip" data-placement="top" title="Added to Wishlist">
-                                    <i class="fa fa-heart ml-3"></i>
-                                </a>
-                              </span>
-                            </div>
-                        </div>
-                      </div>              
-                    </div>
-                  </article>
+                        <!-- <a href="#" class="btn btn-primary waves-light" mdbRippleRadius>Button</a> -->
+                        <!--Card footer-->
+                        <div class="card-footer">
+                          <span class="left">Rs {{item.rate}}/- <span class="discount">Rs 199/-</span></span>
+                          <span class="right">
+                              <a placement="top" mdbTooltip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                              <a placement="top" mdbTooltip="Share"><i class="fa fa-share-alt"></i></a>
+                              <a class="active" placement="top" mdbTooltip="Added to Wishlist"  container="body"><i class="fa fa-heart"></i></a>
+                          </span>
+                      </div>
+                  </div>
               </div>
           </div>
       </div>
-      <!-- <div class="row search-results"
-        infiniteScroll
-        [infiniteScrollDistance]="1"
-        [infiniteScrollThrottle]="10"
-        (scrolled)="onScroll()">
-        <ul class="list-group">
-            <li class="list-group-item" *ngFor="let item of fishes">
-                <figure class="figure">
-                  <ul class="list-group">
-                      <li class="list-group-item" *ngFor="let arr1 of item.images">
-                          <div class="col-md-8 thumbnail">
-                              <img   class="d-inline-block align-top" alt="" src="{{arr1.thumbnail}}" alt="">
-                          </div>
-                      </li>
-                  </ul>
-                  <figcaption class="figure-caption text-left">{{item.name}}</figcaption>
-                  <p class="h6"><i>{{item.description}}</i></p>
-                </figure>
-            </li>
-        </ul>
-      </div> --> 
 
       <div class="modal fade right" id="fullHeightModalRight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-full-height" role="document">
@@ -312,10 +234,9 @@
                   </div>
           </div>
       </div>
-
-
-
-
+    <!-- </div> -->
+    <!--/.Carousel Wrapper-->
       <hr>
     </div> <!-- /container -->
+    </div>
     

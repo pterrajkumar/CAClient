@@ -1,4 +1,4 @@
-<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse" title="This Header is rendered by /app/_layout/site-header/site-header.component.html">
+<!-- <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse" title="This Header is rendered by /app/_layout/site-header/site-header.component.html">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -15,7 +15,7 @@
       <li class="nav-item">
         <a class="nav-link" routerLink="/about"><i class="material-icons">store</i></a>
       </li>
-      <!--<li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link" routerLink="/login">Login Page<small>(No layout)</small></a>
       </li>
       
@@ -24,7 +24,55 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="/profile">Profile<small>(App layout)</small></a>
-      </li>-->
+      </li>
     </ul>
   </div>
-</nav>
+</nav> -->
+
+
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo">
+           
+  <!-- Navbar brand -->
+  <logo><a class="navbar-brand" href="#">The Craft's Aquarium</a></logo>
+
+  <!-- Collapsible content -->
+  <links>
+
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+              <a class="nav-link waves-light" mdbRippleRadius>Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link waves-light" mdbRippleRadius>Products</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link waves-light" mdbRippleRadius>Pricing</a>
+          </li>
+
+          <!-- Dropdown -->
+          <li class="nav-item dropdown" dropdown>
+              <a dropdownToggle mdbRippleRadius type="button" class="nav-link dropdown-toggle waves-light" mdbRippleRadius>
+              Basic dropdown<span class="caret"></span></a>
+              <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                  <a class="dropdown-item waves-light" mdbRippleRadius href="#">Action</a>
+                  <a class="dropdown-item waves-light" mdbRippleRadius href="#">Another action</a>
+                  <a class="dropdown-item waves-light" mdbRippleRadius href="#">Something else here</a>
+                  <div class="divider dropdown-divider"></div>
+                  <a class="dropdown-item waves-light" mdbRippleRadius href="#">Separated link</a>
+              </div>
+          </li>
+
+      </ul>
+      <!-- Links -->
+
+      <!-- Search form -->
+      <form class="form-inline  waves-light" mdbRippleRadius>
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      </form>
+  </links>
+  <!-- Collapsible content -->
+
+</mdb-navbar>
+<!--/.Navbar-->
