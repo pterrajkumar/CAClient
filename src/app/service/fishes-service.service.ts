@@ -9,6 +9,10 @@ export class FishesService {
 
   constructor(private http: Http) { }
 
+  getTotalFishes(){
+    return this.http.get(`${BASE_URL}/api/totalFishes`);
+  }
+
   getFishes(currentIndex: number) {
     return this.http.get(`${BASE_URL}/api/fishes/${currentIndex}`);
   }
