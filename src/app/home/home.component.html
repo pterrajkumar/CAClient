@@ -172,7 +172,7 @@
         [infiniteScrollDistance]="10"
         [infiniteScrollThrottle]="50"
         (scrolled)="onScroll()">
-        <div class="col-md-4 clearfix d-none d-md-block" *ngFor="let item of fishes">
+        <div class="col-md-4" *ngFor="let item of fishes">
           <div class="card mb-2" *ngFor="let arr1 of item.images">
                   <!--Card image-->
                   <div class="view overlay hm-white-slight">
@@ -202,10 +202,10 @@
                         </ng-template>
                         <!-- <a href="#" class="btn btn-primary waves-light" mdbRippleRadius>Button</a> -->
                         <!--Card footer-->
-                        <div class="card-footer">
-                          <span class="left">Rs {{item.rate}}/- <span class="discount">Rs 199/-</span></span>
-                          <span class="right">
-                              <a placement="top" mdbTooltip="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                        <div class="card-footer row">
+                          <span class="left col-sm-8">Rs {{item.rate}}/- <span class="discount">Rs 199/-</span></span>
+                          <span class="right col-sm-4">
+                              <a placement="top" mdbTooltip="Add to Cart" data-toggle="modal" data-target="#fullHeightModalRight" ><i class="fa fa-shopping-cart"></i></a>
                               <a placement="top" mdbTooltip="Share"><i class="fa fa-share-alt"></i></a>
                               <a class="active" placement="top" mdbTooltip="Added to Wishlist"  container="body"><i class="fa fa-heart"></i></a>
                           </span>
