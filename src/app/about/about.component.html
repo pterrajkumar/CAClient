@@ -1,9 +1,15 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1 class="display-3">About Page Works</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+        <h1 class="display-3">The Craft's Aquarium</h1>
+        <hr>
+        <p>The Craft's Aquarium, was formally established in the year of 2018 making its presence in retail sales of Tropical fishes and aquariums, accessories and related services.</p>
+        <hr>
+      </div>
+      <div>
+          <agm-map [latitude]="map.lat" [longitude]="map.lng" [zoom] = "19">
+              <agm-marker [latitude]="map.lat" [longitude]="map.lng"></agm-marker>
+            </agm-map>
       </div>
     </div>
 
@@ -11,20 +17,33 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <h2>Contacting us</h2>
+          <hr>
+          <p>If you have any queries, please contact us at: </p>
+          <hr>
+          <p>
+              <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp;<strong>Address:</strong> Yaiskul, Moirangkhom Sougaijam Leirak, Imphal. Manipur - 795001
+          </p>
+          <hr>
+          <p>
+            <i class="fa fa-phone" aria-hidden="true"></i> &nbsp;<strong>Phone:</strong> +91 8486444241
+          </p>
+          <hr>
+          <p><a href="www.thecraftsaquarium.com">www.thecraftsaquarium.com</a></p>
+          <hr>
         </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-        </div>
+        <div class="col-md-8">
+          <h2>Our Services</h2>
+          <hr>
+          <ul>
+            <li>
+                <p>Our Service is to present a widest collection of fish varieties to our esteemed customers along with equipments required for every specific purpose of aquarium keepers through our store and our professionally managed online services @ <a href="www.thecraftsaquarium.com">www.thecraftsaquarium.com</a>. One of our goal is to satisfy our customer`s needs at the best available cost. We deal with the in-house bred fishes along with the imported ones and a large range of accessories that caters to the end to end need of aquarium lovers.</p><br>
+            </li>
+            <li>
+                <p>We love your Pets as much as you do so as to why we do take care of them by extending our services into cleaning and maintaining of your aquariums. </p>
+            </li>
+          </ul>
+       </div>        
       </div>
 
       <hr>

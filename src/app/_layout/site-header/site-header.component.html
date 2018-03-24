@@ -34,7 +34,7 @@
 <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo">
            
   <!-- Navbar brand -->
-  <logo><a class="navbar-brand" href="#">The Craft's Aquarium</a></logo>
+  <logo><a class="navbar-brand" href="/about">The Craft's Aquarium</a></logo>
 
   <!-- Collapsible content -->
   <links>
@@ -42,17 +42,17 @@
       <!-- Links -->
       <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-              <a class="nav-link waves-light" mdbRippleRadius>Home<span class="sr-only">(current)</span></a>
+              <a class="nav-link waves-light" routerLink="/about" mdbRippleRadius><i class="fa fa-home" aria-hidden="true"></i><span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
-              <a class="nav-link waves-light" mdbRippleRadius>Products</a>
-          </li>
-          <li class="nav-item">
+         <!--  <li class="nav-item">
+              <a class="nav-link waves-light" routerLink="/about" routerLinkActive #rla2="routerLinkActive" [ngClass]="rla2.isActive ? 'nav-link active' : 'nav-link'" mdbRippleRadius>About Us</a>
+          </li> -->
+          <!-- <li class="nav-item">
               <a class="nav-link waves-light" mdbRippleRadius>Pricing</a>
-          </li>
+          </li> -->
 
           <!-- Dropdown -->
-          <li class="nav-item dropdown" dropdown>
+          <!-- <li class="nav-item dropdown" dropdown>
               <a dropdownToggle mdbRippleRadius type="button" class="nav-link dropdown-toggle waves-light" mdbRippleRadius>
               Basic dropdown<span class="caret"></span></a>
               <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
@@ -62,7 +62,7 @@
                   <div class="divider dropdown-divider"></div>
                   <a class="dropdown-item waves-light" mdbRippleRadius href="#">Separated link</a>
               </div>
-          </li>
+          </li> -->
 
       </ul>
       <!-- Links -->

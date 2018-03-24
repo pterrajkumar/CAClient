@@ -4,6 +4,7 @@ import { NgModule, NO_ERRORS_SCHEMA  } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { AgmCoreModule } from '@agm/core';
 
 import { AppComponent } from './app.component';
 import { routing } from './app.routing';
@@ -39,7 +40,10 @@ import { FishesService } from './service/fishes-service.service';
   ],
   imports: [
     BrowserModule, HttpModule, InfiniteScrollModule, FormsModule, routing, LazyLoadImagesModule, 
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBu2szrR4-qMa9xsS203c-NGDEY1O8yB_0'
+    })
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [FishesService],

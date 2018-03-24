@@ -12,4 +12,10 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
   }
 
+  //12.921307, 77.663056
+  //public map: any = { lat: 12.921307, lng: 77.663056 };
+
+  public map: any = { lat: 24.790119, lng: 93.941281 };
+
+
 }
