@@ -38,7 +38,8 @@ import { FishesService } from './service/fishes-service.service';
     RegisterComponent
   ],
   imports: [
-    BrowserModule, HttpModule, InfiniteScrollModule, FormsModule, routing, LazyLoadImagesModule, MDBBootstrapModule.forRoot()
+    BrowserModule, HttpModule, InfiniteScrollModule, FormsModule, routing, LazyLoadImagesModule, 
+    MDBBootstrapModule.forRoot()
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [FishesService],

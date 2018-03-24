@@ -48,3 +48,33 @@
   .carousel-multi-item .card{margin:1px}
   .carousel-multi-item .card-cascade.narrower{margin-top:20px;margin-bottom:5px}@media only screen and (max-width:992px){.carousel-multi-item .carousel-indicators li{margin-bottom:-30px}}.carousel-thumbnails{margin-bottom:80px}.carousel-thumbnails .carousel-indicators{margin-bottom:-75px;position:absolute}.carousel-thumbnails .carousel-indicators li{height:auto;max-width:100px;width:100px;border:none}.carousel-thumbnails .carousel-indicators .active{height:auto;width:auto;opacity:.5}.carousel-thumbnails .carousel-indicators img{max-width:100px;height:50px;overflow:hidden;display:block}@media only screen and (max-width:600px){.carousel-thumbnails{margin-bottom:60px}.carousel-thumbnails .carousel-indicators{margin-bottom:-60px}.carousel-thumbnails .carousel-indicators img{max-width:50px;height:25px}}
   
+  .btn-floating.btn-lg{width:61.1px;height:61.1px; border-radius: 50%;}
+  .btn-floating.btn-lg i{font-size:1.625rem;line-height:61.1px}.fixed-action-btn{position:fixed;z-index:998;right:35px;bottom:35px;margin-bottom:0;padding-top:15px}.fixed-action-btn ul{position:absolute;bottom:64px;left:0;right:0;margin:0;padding:0;text-align:center}.fixed-action-btn ul li{margin-bottom:15px}.fixed-action-btn ul a.btn-floating{opacity:0}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:none;-moz-appearance:none;appearance:none}.btn-rounded{border-radius:10em}.btn.purple-gradient{-webkit-transition:.5s ease;transition:.5s ease;color:#fff}.btn.purple-gradient:active,.btn.purple-gradient:active:focus .btn.purple-gradient.active,.btn.purple-gradient:focus,.btn.purple-gradient:hover{background:-webkit-linear-gradient(50deg,#ff88ce,#8f8bf7);background:linear-gradient(40deg,#ff88ce,#8f8bf7)}
+   .header-cart-counter {
+    font-size: 8px !important;
+    text-align: center;
+    font-weight: bold;
+  }
+  .item-count {
+    text-align: center;
+    color: #000;
+    background: #fff;
+    width: 18px;
+    height: 18px;
+    margin: auto;
+    border-radius: 50%;
+    position: relative;
+    top: 8px;
+    font-size: 12px !important;
+    text-align: center;
+    font-weight: bold;
+}
+
+p {
+  display: block;
+  -webkit-margin-before: -0.5em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 13px;
+  -webkit-margin-end: 0px;
+}
+

@@ -28,7 +28,7 @@
           <mdb-slide>
             <div class="col-md-4">
                 <div class="card mb-2">
-                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg" alt="Card image cap">
+                    <img class="img-fluid" src="https://rajkumarpeterstorage2.blob.core.windows.net/rpeterimages/Slide_1_1.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h4 class="card-title">Card title</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -39,7 +39,7 @@
 
             <div class="col-md-4 clearfix d-none d-md-block">
                 <div class="card mb-2">
-                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" alt="Card image cap">
+                    <img class="img-fluid" src="https://rajkumarpeterstorage2.blob.core.windows.net/rpeterimages/Slide_1_2.png" alt="Card image cap">
                     <div class="card-body">
                         <h4 class="card-title">Card title</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -50,7 +50,7 @@
 
             <div class="col-md-4 clearfix d-none d-md-block">
                 <div class="card mb-2">
-                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" alt="Card image cap">
+                    <img class="img-fluid" src="https://rajkumarpeterstorage2.blob.core.windows.net/rpeterimages/Slide_1_3.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h4 class="card-title">Card title</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -203,39 +203,62 @@
                         <!-- <a href="#" class="btn btn-primary waves-light" mdbRippleRadius>Button</a> -->
                         <!--Card footer-->
                         <div class="card-footer row">
-                          <span class="left col-sm-8">Rs {{item.rate}}/- <span class="discount">Rs 199/-</span></span>
-                          <span class="right col-sm-4">
-                              <a placement="top" mdbTooltip="Add to Cart" data-toggle="modal" data-target="#fullHeightModalRight" ><i class="fa fa-shopping-cart"></i></a>
+                          <span class="left col-sm-4">Rs {{item.rate}}/- <span class="discount">Rs 199/-</span></span>
+                          <span class="right col-sm-8">
+                              <a placement="top" mdbTooltip="Add to Cart" data-toggle="modal" data-target="#centralModalSuccess"(click)="onClickAddToCart()" mdbRippleRadius ><i class="fa fa-shopping-cart"></i></a>
                               <a placement="top" mdbTooltip="Share"><i class="fa fa-share-alt"></i></a>
                               <a class="active" placement="top" mdbTooltip="Added to Wishlist"  container="body"><i class="fa fa-heart"></i></a>
+
+                              <!-- <button type="button" (click)="onClickAddToCart()">Rename</button> -->
                           </span>
                       </div>
                   </div>
               </div>
           </div>
-      </div>
-
-      <div class="modal fade right" id="fullHeightModalRight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-full-height" role="document">
-                  <div class="modal-content">
-                      <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                          </button>
-                      </div>
-                      <div class="modal-body">
-                          ...
-                      </div>
-                      <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary">Save changes</button>
-                      </div>
-                  </div>
-          </div>
-      </div>
+      </div>      
     <!-- </div> -->
     <!--/.Carousel Wrapper-->
+  <!-- Central Modal Medium Success -->
+  <div mdbModal #demoBasic="mdb-modal" class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-notify modal-success" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <p class="heading lead">Modal Success</p>
+        
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="demoBasic.hide()">
+                        <span aria-hidden="true" class="white-text">&times;</span>
+                    </button>
+                </div>
+        
+                <!--Body-->
+                <div class="modal-body">
+                    <div class="text-center">
+                        <i class="fa fa-check fa-4x mb-3 animated rotateIn"></i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit iusto nulla aperiam blanditiis ad consequatur in dolores culpa, dignissimos, eius non possimus fugiat. Esse ratione fuga, enim,
+                            ab officiis totam.</p>
+                    </div>
+                </div>
+        
+                <!--Footer-->
+                <div class="modal-footer justify-content-center">
+                    <a type="button" class="btn btn-success">Get it now <i class="fa fa-diamond ml-1"></i></a>
+                    <a type="button" class="btn btn-outline-success waves-effect" data-dismiss="modal" (click)="demoBasic.hide()">No, thanks</a>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+        </div>
+        <!-- Central Modal Medium Success-->
+        
+        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+                <a class="btn-floating  red" mdbRippleRadius>
+                        <p id="header-cart-counter" class="item-count">{{items}}</p>
+                        <p class="plus"><i class="fa fa-shopping-cart"></i></p>                        
+                </a>                          
+            </div>
+        
       <hr>
     </div> <!-- /container -->
     </div>

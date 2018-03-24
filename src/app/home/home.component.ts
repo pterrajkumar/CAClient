@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { LazyLoadImagesModule } from 'ngx-lazy-load-images';
 import { FishesService } from '../service/fishes-service.service';
 import { PACKAGE_ROOT_URL } from '@angular/core/src/application_tokens';
+import { ModalDirective  } from 'angular-bootstrap-md';
 
 @Component({
   selector: 'app-home',
@@ -17,7 +18,9 @@ export class HomeComponent implements OnInit {
   public myInterval: number = 3000;
   public activeSlideIndex: number = 0;
   public noWrapSlides:boolean = false;
-
+  public items: number = 0;
+  /** Edit user modal */
+  @ViewChild('demoBasic') public demoBasic: ModalDirective;
   
   constructor(private fishesService: FishesService) { 
     this.getTotalFishes();
@@ -80,4 +83,11 @@ export class HomeComponent implements OnInit {
       (error: any) => this.errorMessage = <any>error
     );
   }
+
+  onClickAddToCart(){
+    this.demoBasic.show()
+  }
+
+  
+
 }
