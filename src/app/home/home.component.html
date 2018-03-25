@@ -28,7 +28,7 @@
           <mdb-slide>
             <div class="col-md-4">
                 <div class="card mb-2">
-                    <img class="img-fluid" src="https://rajkumarpeterstorage2.blob.core.windows.net/rpeterimages/Slide_1_1.jpg" alt="Card image cap">
+                    <img class="img-fluid" src="https://rajkumarpeterstorage2.blob.core.windows.net/rpeterimages/GoldFish_1_1.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h4 class="card-title">Card title</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -39,7 +39,7 @@
 
             <div class="col-md-4 clearfix d-none d-md-block">
                 <div class="card mb-2">
-                    <img class="img-fluid" src="https://rajkumarpeterstorage2.blob.core.windows.net/rpeterimages/Slide_1_2.png" alt="Card image cap">
+                    <img class="img-fluid" src="https://rajkumarpeterstorage2.blob.core.windows.net/rpeterimages/GoldFish_1_2.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h4 class="card-title">Card title</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -50,7 +50,7 @@
 
             <div class="col-md-4 clearfix d-none d-md-block">
                 <div class="card mb-2">
-                    <img class="img-fluid" src="https://rajkumarpeterstorage2.blob.core.windows.net/rpeterimages/Slide_1_3.jpg" alt="Card image cap">
+                    <img class="img-fluid" src="https://rajkumarpeterstorage2.blob.core.windows.net/rpeterimages/GoldFish_1_3.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h4 class="card-title">Card title</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -70,7 +70,7 @@
 
             <div class="col-md-4">
                 <div class="card mb-2">
-                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+                    <img class="img-fluid" src="https://rajkumarpeterstorage2.blob.core.windows.net/rpeterimages/Arowanas_1_1.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h4 class="card-title">Card title</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -176,7 +176,7 @@
           <div class="card mb-2" *ngFor="let arr1 of item.images">
                   <!--Card image-->
                   <div class="view overlay hm-white-slight">
-                      <img class="card-img-top" width="100%" height="60%" alt="" src="{{arr1.thumbnail}}" alt="Card image cap">
+                      <img class="img-fluid" alt="" src="{{arr1.thumbnail}}" alt="Card image cap">
                       <a>
                           <div class="mask waves-effect waves-light" mdbRippleRadius></div>
                       </a>
@@ -194,7 +194,7 @@
                       <h4 class="card-title">{{item.name}}</h4>
                       <!--Description-->
                       <p class="card-text">{{item.description}}</p>
-                      <div *ngIf="item.available == 'true'; else nostock">
+                        <div *ngIf="item.available == 'true'; else nostock">
                           In-Stock
                         </div>
                         <ng-template #nostock>
@@ -205,9 +205,9 @@
                         <div class="card-footer row">
                           <span class="left col-sm-4">Rs {{item.rate}}/- <span class="discount">Rs 199/-</span></span>
                           <span class="right col-sm-8">
-                              <a placement="top" mdbTooltip="Add to Cart" data-toggle="modal" data-target="#centralModalSuccess"(click)="onClickAddToCart()" mdbRippleRadius ><i class="fa fa-shopping-cart"></i></a>
+                              <a placement="top" mdbTooltip="Add to Cart" data-toggle="modal" data-target="#centralModalSuccess"(click)="onClickAddToCart(item.index)" mdbRippleRadius ><i class="fa fa-shopping-cart"></i></a>
                               <a placement="top" mdbTooltip="Share"><i class="fa fa-share-alt"></i></a>
-                              <a class="active" placement="top" mdbTooltip="Added to Wishlist"  container="body"><i class="fa fa-heart"></i></a>
+                              <a [ngClass]="item.available == 'true' ? 'active' : ''" placement="top" mdbTooltip="Added to Wishlist"  container="body"><i class="fa fa-heart"></i></a>
 
                               <!-- <button type="button" (click)="onClickAddToCart()">Rename</button> -->
                           </span>

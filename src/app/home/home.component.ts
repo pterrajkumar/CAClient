@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
   public myInterval: number = 3000;
   public activeSlideIndex: number = 0;
   public noWrapSlides:boolean = false;
-  public items: number = 0;
+  public items: number = 10;
   /** Edit user modal */
   @ViewChild('demoBasic') public demoBasic: ModalDirective;
   
@@ -41,8 +41,7 @@ export class HomeComponent implements OnInit {
       {"image":"https://mdbootstrap.com/img/Photos/Slides/img%20(20).jpg"},
   ];
 
-  onScroll(){    
-    console.log("hi");
+  onScroll(){
     if(this.currentIndex <= this.totalFishes){      
       
       const tempIndex:string = String(this.currentIndex);
@@ -84,7 +83,8 @@ export class HomeComponent implements OnInit {
     );
   }
 
-  onClickAddToCart(){
+  onClickAddToCart(index:number){
+    console.log(index);
     this.demoBasic.show()
   }
 
